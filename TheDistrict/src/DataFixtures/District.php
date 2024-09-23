@@ -762,11 +762,169 @@ class District extends Fixture
     $platepinardindienne -> setImage ("EpinardIndienne.jpg");
     $platepinardindienne -> $setCategory ($categoryveggie);
     $platepinardindienne -> setActive ("Yes");
-    $manager->persist($platepinardindienne);
+    $manager->persist($platepinardveggie);
 
     $platlegumemijote = new Plats ();
-    
+    $platlegumemijote -> setLibelle ("Légumes mijotés");
+    $platlegumemijote -> setDescription ("Une symphonie de saveurs végétales dans votre assiette");
+    $platlegumemijote -> setPrix ("7,20");
+    $platlegumemijote -> setImage ("LegumeMijote.jpg");
+    $platlegumemijote -> $setCategory ($categoryveggie);
+    $platlegumemijote -> setActive ("Yes");
+    $manager->persist($platlegumemijote);
 
+    $platpoischichecarotteroti = new Plats ();
+    $platpoischichecarotteroti -> setLibelle ("Pois chiche carotte roti");
+    $platpoischichecarotteroti -> setDescription ("Une symphonie de saveurs végétales dans votre assiette");
+    $platpoischichecarotteroti -> setPrix ("6,20");
+    $platpoischichecarotteroti -> setImage ("PoisChicheCarotteRoti.jpg");
+    $platpoischichecarotteroti -> $setCategory ($categoryveggie);
+    $platpoischichecarotteroti -> setActive ("Yes");
+    $manager->persist($platpoischichecarotteroti);
+
+    $platwrapbuffalochiken = new Plats ();
+    $platwrapbuffalochiken -> setLibelle ("Wrap buffalo chiken");
+    $platwrapbuffalochiken -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrapbuffalochiken -> setPrix ("4,80");
+    $platwrapbuffalochiken -> setImage ("WrapBuffaloChiken.jpg");
+    $platwrapbuffalochiken -> $setCategory ($categorywrap);
+    $platwrapbuffalochiken -> setActive ("Yes");
+    $manager->persist($platwrapbuffalochiken);
+
+    $platwrappouletcrudite = new Plats ();
+    $platwrappouletcrudite -> setLibelle ("Wrap poulet crudité");
+    $platwrappouletcrudite -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrappouletcrudite -> setPrix ("5,20");
+    $platwrappouletcrudite -> setImage ("WrapPouletCrudite.jpg");
+    $platwrappouletcrudite -> $setCategory ($categorywrap);
+    $platwrappouletcrudite -> setActive ("Yes");
+    $manager->persist($platwrappouletcrudite);
+
+    $platwraplegumes = new Plats ();
+    $platwraplegumes -> setLibelle ("Wrap légumes");
+    $platwraplegumes -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwraplegumes -> setPrix ("5,10");
+    $platwraplegumes -> setImage ("WrapLegume.jpg");
+    $platwraplegumes -> $setCategory ($categorywrap);
+    $platwraplegumes -> setActive ("Yes");
+    $manager->persist($platwraplegumes);
+
+    $platwrappoissons = new Plats ();
+    $platwrappoissons -> setLibelle ("Wrap poissons");
+    $platwrappoissons -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrappoissons -> setPrix ("5,60");
+    $platwrappoissons -> setImage ("WrapPoisson.jpg");
+    $platwrappoissons -> $setCategory ($categorywrap);
+    $platwrappoissons -> setActive ("Yes");
+    $manager->persist($platwrappoissons);
+
+    $platwrapbaconavocat = new Plats    ();
+    $platwrapbaconavocat -> setLibelle ("Wrap bacon avocat");
+    $platwrapbaconavocat -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrapbaconavocat -> setPrix ("6,20");
+    $platwrapbaconavocat -> setImage ("WrapBaconAvocat.jpg");
+    $platwrapbaconavocat -> $setCategory ($categorywrap);
+    $platwrapbaconavocat -> setActive ("Yes");
+    $manager->persist($platwrapbaconavocat);
+
+    $platwrapboeuf = new Plats ();
+    $platwrapboeuf -> setLibelle ("Wrap boeuf");
+    $platwrapboeuf -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrapboeuf -> setPrix ("5,40");
+    $platwrapboeuf -> setImage ("WrapBoeuf.jpg");
+    $platwrapboeuf -> $setCategory ($categorywrap);
+    $platwrapboeuf -> setActive ("Yes");
+    $manager->persist($platwrapboeuf);
+
+    $platwrappouletavocat = new Plats ();
+    $platwrappouletavocat -> setLibelle ("Wrap poulet avocat");
+    $platwrappouletavocat -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrappouletavocat -> setPrix ("6");
+    $platwrappouletavocat -> setImage ("WrapPouletAvocat.jpg");
+    $platwrappouletavocat -> $setCategory ($categorywrap);
+    $platwrappouletavocat -> setActive ("Yes");
+    $manager->persist($platwrappouletavocat);
+
+    $platwrapsaumonconcombre = new Plats ();
+    $platwrapsaumonconcombre -> setLibelle ("Wrap saumon concombre");
+    $platwrapsaumonconcombre -> setDescription ("Un voyage gustatif autour du monde dans votre main");
+    $platwrapsaumonconcombre -> setPrix ("6,40");
+    $platwrapsaumonconcombre -> setImage ("WrapSaumonConcombre.jpg");
+    $platwrapsaumonconcombre -> $setCategory ($categorywrap);
+    $platwrapsaumonconcombre -> setActive ("Yes");
+    $manager->persist($platwrapsaumonconcombre);
+
+    $platpainbanane = new Plats ();
+    $platpainbanane -> setLibelle ("Pain à la banane");
+    $platpainbanane -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpainbanane -> setPrix ("2,20");
+    $platpainbanane -> setImage ("PainBanane.jpg");
+    $platpainbanane -> $setCategory ($categoryboulangerie);
+    $platpainbanane -> setActive ("Yes");
+    $manager->persist($platpainbanane);
+
+    $platpaincereales = new Plats ();
+    $platpaincereales -> setLibelle ("Pain aux céréales");
+    $platpaincereales -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpaincereales -> setPrix ("2,40");
+    $platpaincereales -> setImage ("PainCereale.jpg");
+    $platpaincereales -> $setCategory ($categoryboulangerie);
+    $platpaincereales -> setActive ("Yes");
+    $manager->persist($platpaincereales);
+
+    $platpaincitrouille = new Plats ();
+    $platpaincitrouille -> setLibelle ("Pain à la citrouille");
+    $platpaincitrouille -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpaincitrouille -> setPrix ("2,60");
+    $platpaincitrouille -> setImage ("PainCitrouille.jpg");
+    $platpaincitrouille -> $setCategory ($categoryboulangerie);
+    $platpaincitrouille -> setActive ("Yes");
+    $manager->persist($platpaincitrouille);
+
+    $platpainfromage = new Plats ();
+    $platpainfromage -> setLibelle ("Pain au fromage");
+    $platpainfromage -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpainfromage -> setPrix ("2,80");
+    $platpainfromage -> setImage ("PainFromage.jpg");
+    $platpainfromage -> $setCategory ($categoryboulangerie);
+    $platpainfromage -> setActive ("Yes");
+    $manager->persist($platpainfromage);
+
+    $platpaincourgette = new Plats ();
+    $platpaincourgette -> setLibelle ("Pain à la courgette");
+    $platpaincourgette -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpaincourgette -> setPrix ("4,20");
+    $platpaincourgette -> setImage ("PainCourgette.jpg");
+    $platpaincourgette -> $setCategory ($categoryboulangerie);
+    $platpaincourgette -> setActive ("Yes");
+    $manager->persist($platpaincourgette);
+
+    $platpainepices = new Plats ();
+    $platpainepices -> setLibelle ("Pain d'épices");
+    $platpainepices -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpainepices -> setPrix ("3,40");
+    $platpainepices -> setImage ("PainDepice.jpg");
+    $platpainepices -> $setCategory ($categoryboulangerie);
+    $platpainepices -> setActive ("Yes");
+    $manager->persist($platpainepices);
+
+    $platpainnoix = new Plats ();
+    $platpainnoix -> setLibelle ("Pain aux noix");
+    $platpainnoix -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpainnoix -> setPrix ("3,20");
+    $platpainnoix -> setImage ("PainNoix.jpg");
+    $platpainnoix -> $setCategory ($categoryboulangerie);
+    $platpainnoix -> setActive ("Yes");
+    $manager->persist($platpainnoix);
+
+    $platpainolives = new Plats ();
+    $platpainolives -> setLibelle ("Pain aux olives");
+    $platpainolives -> setDescription ("Notre selection de pain frais pour accompagner vos repas");
+    $platpainolives -> setPrix ("4,20");
+    $platpainolives -> setImage ("PainOlive.jpg");
+    $platpainolives -> $setCategory ($categoryboulangerie);
+    $platpainolives -> setActive ("Yes");
+    $manager->persist($platpainolives);
     
     
     $manager->flush();
